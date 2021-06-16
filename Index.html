@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Marketing</title>
+    <!-- File Style -->
+    <link rel="stylesheet" href="Css/Syle.css" />
+    <!-- Reneder All Elements -->
+    <link rel="stylesheet" href="Css/normalize.css" />
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <!-- Splide Css-->
+    <link rel="stylesheet" href="Css/splide.min.css" />
+    <link rel="stylesheet" href="Css/splide-core.min.css" />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Creat.co</h1>
+            </div>
+            <div id="navigation">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contuct Us</a></li>
+                    </ul>
+                </nav>
+                <div class="links">
+                    <a href="#">Login in</a>
+                    <a href="#">Getting Started</a>
+                </div>
+            </div>
+            <i class="fas fa-plus"></i>
+            <div class="notr" id="nav">
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Main -->
+    <div class="section">
+        <div class="container">
+            <div class="box">
+                <div class="text-content">
+                    <h1>Grow Your Business With <span>Social Media Marketing</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+                    <form>
+                        <input type="email" placeholder="Email Address" />
+                        <input type="button" value="Learn More" />
+                    </form>
+                </div>
+            </div>
+            <div class="box splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="Images/image-01.png" alt="Social" /></li>
+                        <li class="splide__slide"><img src="Images/image-02.png" alt="Social" /></li>
+                        <li class="splide__slide"><img src="Images/image-03.png" alt="Social" /></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <div class="social">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="copy-right">
+                <a href="https://www.facebook.com/Infinity.Template/"><i class="fas fa-infinity"></i></a>
+                <span>
+                    All Right Are Reserved &copy; Infinity
+
+                </span>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <script>
+        $("header .container > i").click(function () {
+            $("header .container #nav").slideToggle();
+        });
+        document.getElementById("nav").innerHTML = $("#navigation").html();
+
+    </script>
+    <script src="JavaScript/splide.min.js"></script>
+    <script>
+
+        new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            rewind: 'true',
+            type: 'slide',
+            autoplay: 'autoplay',
+            arrows: 'slider'
+        }).mount();
+
+
+    </script>
+
+
+</body>
+
+</html>
